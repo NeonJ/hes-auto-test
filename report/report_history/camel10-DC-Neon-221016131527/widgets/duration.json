@@ -1,0 +1,321 @@
+[ {
+  "uid" : "21156989f509b491",
+  "name" : "test_relay_off_home",
+  "time" : {
+    "start" : 1665897315860,
+    "stop" : 1665897316001,
+    "duration" : 141
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "e7634fb7186d3ebc",
+  "name" : "test_get_pq_date",
+  "time" : {
+    "start" : 1665897307502,
+    "stop" : 1665897307640,
+    "duration" : 138
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "2441670ce53d90d",
+  "name" : "test_get_pq_entries",
+  "time" : {
+    "start" : 1665897306350,
+    "stop" : 1665897306483,
+    "duration" : 133
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "d8f85fe6bc02ae8a",
+  "name" : "test_get_monthly_date",
+  "time" : {
+    "start" : 1665897295991,
+    "stop" : 1665897296111,
+    "duration" : 120
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "eded2916ddc0f29b",
+  "name" : "test_get_device_online1",
+  "time" : {
+    "start" : 1665897299411,
+    "stop" : 1665897299411,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "de8458d6c5c1b85a",
+  "name" : "test_SuspendMasterCoreTask2",
+  "time" : {
+    "start" : 1665897301723,
+    "stop" : 1665897301860,
+    "duration" : 137
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f357002d9dcd76b7",
+  "name" : "test_relay_on_standard_2",
+  "time" : {
+    "start" : 1665897310960,
+    "stop" : 1665897311101,
+    "duration" : 141
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "751d144a5e8b6c88",
+  "name" : "test_get_tariff_new_all",
+  "time" : {
+    "start" : 1665897320755,
+    "stop" : 1665897320888,
+    "duration" : 133
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "80ba2bdde6d34173",
+  "name" : "test_get_device_online3",
+  "time" : {
+    "start" : 1665897299418,
+    "stop" : 1665897299418,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "83649a5dd74f72d",
+  "name" : "test_get_standard_event",
+  "time" : {
+    "start" : 1665897293674,
+    "stop" : 1665897293810,
+    "duration" : 136
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "88345da6af4edc89",
+  "name" : "test_MasterCoreState",
+  "time" : {
+    "start" : 1665897299424,
+    "stop" : 1665897299553,
+    "duration" : 129
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c01300ea40fc4a4d",
+  "name" : "test_get_device_online2",
+  "time" : {
+    "start" : 1665897299414,
+    "stop" : 1665897299414,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "ea11c510876ff400",
+  "name" : "test_GetMeterTariff_Passive",
+  "time" : {
+    "start" : 1665897318430,
+    "stop" : 1665897318568,
+    "duration" : 138
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "e5de927d7cd079b3",
+  "name" : "test_get_daily_entries",
+  "time" : {
+    "start" : 1665897290146,
+    "stop" : 1665897290285,
+    "duration" : 139
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "42e4260a8e3ff302",
+  "name" : "test_get_tariff_new_active",
+  "time" : {
+    "start" : 1665897321905,
+    "stop" : 1665897322043,
+    "duration" : 138
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "cd7b1f51e1859042",
+  "name" : "test_get_lp_date",
+  "time" : {
+    "start" : 1665897305200,
+    "stop" : 1665897305333,
+    "duration" : 133
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "55c2a1cebbc1f8dd",
+  "name" : "test_relay_off_standard_2",
+  "time" : {
+    "start" : 1665897313536,
+    "stop" : 1665897313672,
+    "duration" : 136
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "1d0a18a9cb48af7",
+  "name" : "test_relay_off_standard_1",
+  "time" : {
+    "start" : 1665897312130,
+    "stop" : 1665897312518,
+    "duration" : 388
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "60e7b712f8ef0ed4",
+  "name" : "test_get_meter_time",
+  "time" : {
+    "start" : 1665897298265,
+    "stop" : 1665897298386,
+    "duration" : 121
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "281c1319a24fb938",
+  "name" : "test_read_relay_status_sync",
+  "time" : {
+    "start" : 1665897308655,
+    "stop" : 1665897308775,
+    "duration" : 120
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "68beb6dec4cf4e58",
+  "name" : "test_relay_on_home",
+  "time" : {
+    "start" : 1665897314691,
+    "stop" : 1665897314825,
+    "duration" : 134
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "4a4bcfb16ccffdea",
+  "name" : "test_GetMeterTariff_Active",
+  "time" : {
+    "start" : 1665897317028,
+    "stop" : 1665897317420,
+    "duration" : 392
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "e63c8ee60686f022",
+  "name" : "test_get_meter_status",
+  "time" : {
+    "start" : 1665897297126,
+    "stop" : 1665897297253,
+    "duration" : 127
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "19f7fd537394a8c2",
+  "name" : "test_relay_on_standard_1",
+  "time" : {
+    "start" : 1665897309791,
+    "stop" : 1665897309934,
+    "duration" : 143
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "c493f41a9f115e0a",
+  "name" : "test_get_standard_event_entries",
+  "time" : {
+    "start" : 1665897292509,
+    "stop" : 1665897292651,
+    "duration" : 142
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "ca1a57a9c141fe02",
+  "name" : "test_GetMeterTariff_All",
+  "time" : {
+    "start" : 1665897319585,
+    "stop" : 1665897319733,
+    "duration" : 148
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "2d965fd8bb862322",
+  "name" : "test_get_vector",
+  "time" : {
+    "start" : 1665897302877,
+    "stop" : 1665897303016,
+    "duration" : 139
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "68ad09e73e80bba6",
+  "name" : "test_get_tariff_new_passive",
+  "time" : {
+    "start" : 1665897323065,
+    "stop" : 1665897323184,
+    "duration" : 119
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "ba341256a5e4e70b",
+  "name" : "test_get_daily_date",
+  "time" : {
+    "start" : 1665897291357,
+    "stop" : 1665897291491,
+    "duration" : 134
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "aef49b269457d648",
+  "name" : "test_get_monthly_entries",
+  "time" : {
+    "start" : 1665897294836,
+    "stop" : 1665897294973,
+    "duration" : 137
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "efb4e6ae7a823a00",
+  "name" : "test_SuspendMasterCoreTask1",
+  "time" : {
+    "start" : 1665897300568,
+    "stop" : 1665897300715,
+    "duration" : 147
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cb85e2123330698c",
+  "name" : "test_get_lp_entries",
+  "time" : {
+    "start" : 1665897304034,
+    "stop" : 1665897304179,
+    "duration" : 145
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]

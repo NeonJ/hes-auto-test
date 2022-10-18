@@ -1,0 +1,221 @@
+{
+  "uid" : "15c2e71df7974425",
+  "name" : "test_relay_off_standard_2",
+  "fullName" : "testCase.HESIntegration.Relay_Control.test_relay_control.Test_Relay_Control#test_relay_off_standard_2",
+  "historyId" : "ca87366991a20ff93a371d04eea318c8",
+  "time" : {
+    "start" : 1665897171348,
+    "stop" : 1665897171487,
+    "duration" : 139
+  },
+  "description" : "\n        同步标准拉闸 - 拉闸状态去拉闸\n         ",
+  "descriptionHtml" : "<pre><code>    同步标准拉闸 - 拉闸状态去拉闸\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'DISCONNECTED' in \"{'header': {'correlationId': '68e19310-1253-4a6c-bd9c-e60266e52429', 'messageId': 'f76729b5-09bc-4836-9197-295a9da88254', 'serviceType': 'RELAY_CONTROL', 'businessType': 'RELAY_CONTROL', 'source': 'HES', 'createTime': '20200910191946', 'messageType': 'RESPONSE'}, 'payload': [{'code': -166, 'desc': 'Master device 2241031003 offline!', 'deviceNo': '2241031003', 'deviceType': 'METER', 'executeStartTime': '221016101249', 'executeEndTime': '221016101249', 'transactionId': '2241031003_221016131251', 'data': []}], 'reply': {'replyCode': 500, 'replyDesc': 'Internal Error'}}\"\n +  where \"{'header': {'correlationId': '68e19310-1253-4a6c-bd9c-e60266e52429', 'messageId': 'f76729b5-09bc-4836-9197-295a9da88254', 'serviceType': 'RELAY_CONTROL', 'businessType': 'RELAY_CONTROL', 'source': 'HES', 'createTime': '20200910191946', 'messageType': 'RESPONSE'}, 'payload': [{'code': -166, 'desc': 'Master device 2241031003 offline!', 'deviceNo': '2241031003', 'deviceType': 'METER', 'executeStartTime': '221016101249', 'executeEndTime': '221016101249', 'transactionId': '2241031003_221016131251', 'data': []}], 'reply': {'replyCode': 500, 'replyDesc': 'Internal Error'}}\" = str({'header': {'businessType': 'RELAY_CONTROL', 'correlationId': '68e19310-1253-4a6c-bd9c-e60266e52429', 'createTime': '20200910191946', 'messageId': 'f76729b5-09bc-4836-9197-295a9da88254', ...}, 'payload': [{'code': -166, 'data': [], 'desc': 'Master device 2241031003 offline!', 'deviceNo': '2241031003', ...}], 'reply': {'replyCode': 500, 'replyDesc': 'Internal Error'}})",
+  "statusTrace" : "self = <test_relay_control.Test_Relay_Control object at 0x000002A30D413A20>, requestMessage = 'http://54.179.93.135:32724/api/v1/Request/RequestMessage'\ndevice = {'communication_type': 'GPRS', 'connect_type': 'Short', 'device_number': 2241031003, 'device_type': 'Meter', ...}\ncaseData = <function caseData.<locals>.loadData at 0x000002A30BEEE620>\n\n    @smokeTest\n    def test_relay_off_standard_2(self, requestMessage, device, caseData):\n        \"\"\"\n        同步标准拉闸 - 拉闸状态去拉闸\n         \"\"\"\n        data = caseData('testData/RelayControlTask/relayControl.json')\n        requestData = data['test_RELAY_CONTROL_RELAYOFF']['request']\n        requestData['payload'][0]['deviceNo'] = device['device_number']\n        transactionId = str(device['device_number']) + '_' + time.strftime('%y%m%d%H%M%S',time.localtime())\n        requestData['payload'][0]['transactionId'] = transactionId\n        response, elapsed = HESRequest().post(url=requestMessage, params=requestData)\n>       assert 'DISCONNECTED' in str(response)\nE       assert 'DISCONNECTED' in \"{'header': {'correlationId': '68e19310-1253-4a6c-bd9c-e60266e52429', 'messageId': 'f76729b5-09bc-4836-9197-295a9da88254', 'serviceType': 'RELAY_CONTROL', 'businessType': 'RELAY_CONTROL', 'source': 'HES', 'createTime': '20200910191946', 'messageType': 'RESPONSE'}, 'payload': [{'code': -166, 'desc': 'Master device 2241031003 offline!', 'deviceNo': '2241031003', 'deviceType': 'METER', 'executeStartTime': '221016101249', 'executeEndTime': '221016101249', 'transactionId': '2241031003_221016131251', 'data': []}], 'reply': {'replyCode': 500, 'replyDesc': 'Internal Error'}}\"\nE        +  where \"{'header': {'correlationId': '68e19310-1253-4a6c-bd9c-e60266e52429', 'messageId': 'f76729b5-09bc-4836-9197-295a9da88254', 'serviceType': 'RELAY_CONTROL', 'businessType': 'RELAY_CONTROL', 'source': 'HES', 'createTime': '20200910191946', 'messageType': 'RESPONSE'}, 'payload': [{'code': -166, 'desc': 'Master device 2241031003 offline!', 'deviceNo': '2241031003', 'deviceType': 'METER', 'executeStartTime': '221016101249', 'executeEndTime': '221016101249', 'transactionId': '2241031003_221016131251', 'data': []}], 'reply': {'replyCode': 500, 'replyDesc': 'Internal Error'}}\" = str({'header': {'businessType': 'RELAY_CONTROL', 'correlationId': '68e19310-1253-4a6c-bd9c-e60266e52429', 'createTime': '20200910191946', 'messageId': 'f76729b5-09bc-4836-9197-295a9da88254', ...}, 'payload': [{'code': -166, 'data': [], 'desc': 'Master device 2241031003 offline!', 'deviceNo': '2241031003', ...}], 'reply': {'replyCode': 500, 'replyDesc': 'Internal Error'}})\n\ntestCase\\HESIntegration\\Relay_Control\\test_relay_control.py:85: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1665897143544,
+      "stop" : 1665897143651,
+      "duration" : 107
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "device",
+    "time" : {
+      "start" : 1665897147801,
+      "stop" : 1665897147801,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "requestMessage",
+    "time" : {
+      "start" : 1665897147801,
+      "stop" : 1665897147801,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "slow_down_tests",
+    "time" : {
+      "start" : 1665897171347,
+      "stop" : 1665897171347,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "readConfig",
+    "time" : {
+      "start" : 1665897143651,
+      "stop" : 1665897143652,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "caseData",
+    "time" : {
+      "start" : 1665897147801,
+      "stop" : 1665897147801,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "nacosData",
+    "time" : {
+      "start" : 1665897143652,
+      "stop" : 1665897147801,
+      "duration" : 4149
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n        同步标准拉闸 - 拉闸状态去拉闸\n         ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 'DISCONNECTED' in \"{'header': {'correlationId': '68e19310-1253-4a6c-bd9c-e60266e52429', 'messageId': 'f76729b5-09bc-4836-9197-295a9da88254', 'serviceType': 'RELAY_CONTROL', 'businessType': 'RELAY_CONTROL', 'source': 'HES', 'createTime': '20200910191946', 'messageType': 'RESPONSE'}, 'payload': [{'code': -166, 'desc': 'Master device 2241031003 offline!', 'deviceNo': '2241031003', 'deviceType': 'METER', 'executeStartTime': '221016101249', 'executeEndTime': '221016101249', 'transactionId': '2241031003_221016131251', 'data': []}], 'reply': {'replyCode': 500, 'replyDesc': 'Internal Error'}}\"\n +  where \"{'header': {'correlationId': '68e19310-1253-4a6c-bd9c-e60266e52429', 'messageId': 'f76729b5-09bc-4836-9197-295a9da88254', 'serviceType': 'RELAY_CONTROL', 'businessType': 'RELAY_CONTROL', 'source': 'HES', 'createTime': '20200910191946', 'messageType': 'RESPONSE'}, 'payload': [{'code': -166, 'desc': 'Master device 2241031003 offline!', 'deviceNo': '2241031003', 'deviceType': 'METER', 'executeStartTime': '221016101249', 'executeEndTime': '221016101249', 'transactionId': '2241031003_221016131251', 'data': []}], 'reply': {'replyCode': 500, 'replyDesc': 'Internal Error'}}\" = str({'header': {'businessType': 'RELAY_CONTROL', 'correlationId': '68e19310-1253-4a6c-bd9c-e60266e52429', 'createTime': '20200910191946', 'messageId': 'f76729b5-09bc-4836-9197-295a9da88254', ...}, 'payload': [{'code': -166, 'data': [], 'desc': 'Master device 2241031003 offline!', 'deviceNo': '2241031003', ...}], 'reply': {'replyCode': 500, 'replyDesc': 'Internal Error'}})",
+    "statusTrace" : "self = <test_relay_control.Test_Relay_Control object at 0x000002A30D413A20>, requestMessage = 'http://54.179.93.135:32724/api/v1/Request/RequestMessage'\ndevice = {'communication_type': 'GPRS', 'connect_type': 'Short', 'device_number': 2241031003, 'device_type': 'Meter', ...}\ncaseData = <function caseData.<locals>.loadData at 0x000002A30BEEE620>\n\n    @smokeTest\n    def test_relay_off_standard_2(self, requestMessage, device, caseData):\n        \"\"\"\n        同步标准拉闸 - 拉闸状态去拉闸\n         \"\"\"\n        data = caseData('testData/RelayControlTask/relayControl.json')\n        requestData = data['test_RELAY_CONTROL_RELAYOFF']['request']\n        requestData['payload'][0]['deviceNo'] = device['device_number']\n        transactionId = str(device['device_number']) + '_' + time.strftime('%y%m%d%H%M%S',time.localtime())\n        requestData['payload'][0]['transactionId'] = transactionId\n        response, elapsed = HESRequest().post(url=requestMessage, params=requestData)\n>       assert 'DISCONNECTED' in str(response)\nE       assert 'DISCONNECTED' in \"{'header': {'correlationId': '68e19310-1253-4a6c-bd9c-e60266e52429', 'messageId': 'f76729b5-09bc-4836-9197-295a9da88254', 'serviceType': 'RELAY_CONTROL', 'businessType': 'RELAY_CONTROL', 'source': 'HES', 'createTime': '20200910191946', 'messageType': 'RESPONSE'}, 'payload': [{'code': -166, 'desc': 'Master device 2241031003 offline!', 'deviceNo': '2241031003', 'deviceType': 'METER', 'executeStartTime': '221016101249', 'executeEndTime': '221016101249', 'transactionId': '2241031003_221016131251', 'data': []}], 'reply': {'replyCode': 500, 'replyDesc': 'Internal Error'}}\"\nE        +  where \"{'header': {'correlationId': '68e19310-1253-4a6c-bd9c-e60266e52429', 'messageId': 'f76729b5-09bc-4836-9197-295a9da88254', 'serviceType': 'RELAY_CONTROL', 'businessType': 'RELAY_CONTROL', 'source': 'HES', 'createTime': '20200910191946', 'messageType': 'RESPONSE'}, 'payload': [{'code': -166, 'desc': 'Master device 2241031003 offline!', 'deviceNo': '2241031003', 'deviceType': 'METER', 'executeStartTime': '221016101249', 'executeEndTime': '221016101249', 'transactionId': '2241031003_221016131251', 'data': []}], 'reply': {'replyCode': 500, 'replyDesc': 'Internal Error'}}\" = str({'header': {'businessType': 'RELAY_CONTROL', 'correlationId': '68e19310-1253-4a6c-bd9c-e60266e52429', 'createTime': '20200910191946', 'messageId': 'f76729b5-09bc-4836-9197-295a9da88254', ...}, 'payload': [{'code': -166, 'data': [], 'desc': 'Master device 2241031003 offline!', 'deviceNo': '2241031003', ...}], 'reply': {'replyCode': 500, 'replyDesc': 'Internal Error'}})\n\ntestCase\\HESIntegration\\Relay_Control\\test_relay_control.py:85: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "9613f4f1a56efd09",
+      "name" : "stdout",
+      "source" : "9613f4f1a56efd09.txt",
+      "type" : "text/plain",
+      "size" : 549
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "requestMessage::0",
+    "time" : {
+      "start" : 1665897181776,
+      "stop" : 1665897181777,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "slow_down_tests::0",
+    "time" : {
+      "start" : 1665897171497,
+      "stop" : 1665897172499,
+      "duration" : 1002
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "smokeTest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.HESIntegration.Relay_Control"
+  }, {
+    "name" : "suite",
+    "value" : "test_relay_control"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Relay_Control"
+  }, {
+    "name" : "host",
+    "value" : "NeonPC"
+  }, {
+    "name" : "thread",
+    "value" : "23776-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.HESIntegration.Relay_Control.test_relay_control"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Total Defects",
+      "matchedStatuses" : [ "failed" ],
+      "flaky" : false
+    } ],
+    "tags" : [ "smokeTest" ]
+  },
+  "source" : "15c2e71df7974425.json",
+  "parameterValues" : [ ]
+}

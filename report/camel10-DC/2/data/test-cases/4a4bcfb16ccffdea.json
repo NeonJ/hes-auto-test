@@ -1,0 +1,218 @@
+{
+  "uid" : "4a4bcfb16ccffdea",
+  "name" : "test_GetMeterTariff_Active",
+  "fullName" : "testCase.HESIntegration.Tariff.test_get_meter_tariff.Test_Get_Meter_Tariff#test_GetMeterTariff_Active",
+  "historyId" : "bc70abf4ee9bdaffd72cb2849bd48716",
+  "time" : {
+    "start" : 1665897317028,
+    "stop" : 1665897317420,
+    "duration" : 392
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'activeTariff' in \"{'code': 11304, 'desc': 'Device is offline.', 'data': None}\"\n +  where \"{'code': 11304, 'desc': 'Device is offline.', 'data': None}\" = str({'code': 11304, 'data': None, 'desc': 'Device is offline.'})",
+  "statusTrace" : "self = <test_get_meter_tariff.Test_Get_Meter_Tariff object at 0x0000022D1572D128>, hesURL = 'http://54.179.93.135:32724'\ndevice = {'communication_type': 'GPRS', 'connect_type': 'Short', 'device_number': 2241031003, 'device_type': 'Meter', ...}\ncaseData = <function caseData.<locals>.loadData at 0x0000022D1573F620>\n\n    @smokeTest\n    def test_GetMeterTariff_Active(self, hesURL, device, caseData):\n        url = hesURL + '/Tariff/GetMeterTariff'\n        data = caseData('testData/Tariff/getMeterTariff.json')\n        requestData = data['test_GetMeterTariff_Active']\n        requestData['meterNo'] = device['device_number']\n    \n        expectResJson = requestData['response']\n        response, elapsed = HESRequest().get(url=url, params=requestData)\n        print('Response --- ', response)\n>       assert 'activeTariff' in str(response)\nE       assert 'activeTariff' in \"{'code': 11304, 'desc': 'Device is offline.', 'data': None}\"\nE        +  where \"{'code': 11304, 'desc': 'Device is offline.', 'data': None}\" = str({'code': 11304, 'data': None, 'desc': 'Device is offline.'})\n\ntestCase\\HESIntegration\\Tariff\\test_get_meter_tariff.py:21: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "slow_down_tests",
+    "time" : {
+      "start" : 1665897317028,
+      "stop" : 1665897317028,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "device",
+    "time" : {
+      "start" : 1665897290144,
+      "stop" : 1665897290144,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1665897285924,
+      "stop" : 1665897286028,
+      "duration" : 104
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "nacosData",
+    "time" : {
+      "start" : 1665897286029,
+      "stop" : 1665897290143,
+      "duration" : 4114
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "hesURL",
+    "time" : {
+      "start" : 1665897297126,
+      "stop" : 1665897297126,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "caseData",
+    "time" : {
+      "start" : 1665897290144,
+      "stop" : 1665897290144,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "readConfig",
+    "time" : {
+      "start" : 1665897286028,
+      "stop" : 1665897286029,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 'activeTariff' in \"{'code': 11304, 'desc': 'Device is offline.', 'data': None}\"\n +  where \"{'code': 11304, 'desc': 'Device is offline.', 'data': None}\" = str({'code': 11304, 'data': None, 'desc': 'Device is offline.'})",
+    "statusTrace" : "self = <test_get_meter_tariff.Test_Get_Meter_Tariff object at 0x0000022D1572D128>, hesURL = 'http://54.179.93.135:32724'\ndevice = {'communication_type': 'GPRS', 'connect_type': 'Short', 'device_number': 2241031003, 'device_type': 'Meter', ...}\ncaseData = <function caseData.<locals>.loadData at 0x0000022D1573F620>\n\n    @smokeTest\n    def test_GetMeterTariff_Active(self, hesURL, device, caseData):\n        url = hesURL + '/Tariff/GetMeterTariff'\n        data = caseData('testData/Tariff/getMeterTariff.json')\n        requestData = data['test_GetMeterTariff_Active']\n        requestData['meterNo'] = device['device_number']\n    \n        expectResJson = requestData['response']\n        response, elapsed = HESRequest().get(url=url, params=requestData)\n        print('Response --- ', response)\n>       assert 'activeTariff' in str(response)\nE       assert 'activeTariff' in \"{'code': 11304, 'desc': 'Device is offline.', 'data': None}\"\nE        +  where \"{'code': 11304, 'desc': 'Device is offline.', 'data': None}\" = str({'code': 11304, 'data': None, 'desc': 'Device is offline.'})\n\ntestCase\\HESIntegration\\Tariff\\test_get_meter_tariff.py:21: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "26463deb51413064",
+      "name" : "stdout",
+      "source" : "26463deb51413064.txt",
+      "type" : "text/plain",
+      "size" : 259
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "slow_down_tests::0",
+    "time" : {
+      "start" : 1665897317425,
+      "stop" : 1665897318427,
+      "duration" : 1002
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "hesURL::0",
+    "time" : {
+      "start" : 1665897324203,
+      "stop" : 1665897324203,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "smokeTest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.HESIntegration.Tariff"
+  }, {
+    "name" : "suite",
+    "value" : "test_get_meter_tariff"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Get_Meter_Tariff"
+  }, {
+    "name" : "host",
+    "value" : "NeonPC"
+  }, {
+    "name" : "thread",
+    "value" : "20028-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.HESIntegration.Tariff.test_get_meter_tariff"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Total Defects",
+      "matchedStatuses" : [ "failed" ],
+      "flaky" : false
+    } ],
+    "tags" : [ "smokeTest" ]
+  },
+  "source" : "4a4bcfb16ccffdea.json",
+  "parameterValues" : [ ]
+}

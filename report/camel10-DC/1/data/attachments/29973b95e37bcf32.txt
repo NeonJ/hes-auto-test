@@ -1,0 +1,4 @@
+get request data
+http://54.179.93.135:32724/Tariff/GetMeterTariff
+Request ---  {'request': {'meterNo': 'M202009040003', 'tariffType': '0'}, 'response': {'code': 200, 'desc': ''}, 'meterNo': 2241031003}
+Response ---  {'code': 11304, 'desc': 'Device is offline.', 'data': None}

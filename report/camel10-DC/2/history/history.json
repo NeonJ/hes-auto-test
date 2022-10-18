@@ -1,0 +1,639 @@
+{
+  "86f4364b45f0f2635321919837e909e3" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "21156989f509b491",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'DISCONNECTED' in \"{'header': {'correlationId': '68e19310-1253-4a6c-bd9c-e60266e52429', 'messageId': 'b2a8b386-2e47-4fdb-b126-0da4178460f5', 'serviceType': 'RELAY_CONTROL', 'businessType': 'RELAY_CONTROL', 'source': 'HES', 'createTime': '20200910191946', 'messageType': 'RESPONSE'}, 'payload': [{'code': -166, 'desc': 'Master device 2241031003 offline!', 'deviceNo': '2241031003', 'deviceType': 'METER', 'executeStartTime': '221016101514', 'executeEndTime': '221016101514', 'transactionId': '2241031003_221016131515', 'data': []}], 'reply': {'replyCode': 500, 'replyDesc': 'Internal Error'}}\"\n +  where \"{'header': {'correlationId': '68e19310-1253-4a6c-bd9c-e60266e52429', 'messageId': 'b2a8b386-2e47-4fdb-b126-0da4178460f5', 'serviceType': 'RELAY_CONTROL', 'businessType': 'RELAY_CONTROL', 'source': 'HES', 'createTime': '20200910191946', 'messageType': 'RESPONSE'}, 'payload': [{'code': -166, 'desc': 'Master device 2241031003 offline!', 'deviceNo': '2241031003', 'deviceType': 'METER', 'executeStartTime': '221016101514', 'executeEndTime': '221016101514', 'transactionId': '2241031003_221016131515', 'data': []}], 'reply': {'replyCode': 500, 'replyDesc': 'Internal Error'}}\" = str({'header': {'businessType': 'RELAY_CONTROL', 'correlationId': '68e19310-1253-4a6c-bd9c-e60266e52429', 'createTime': '20200910191946', 'messageId': 'b2a8b386-2e47-4fdb-b126-0da4178460f5', ...}, 'payload': [{'code': -166, 'data': [], 'desc': 'Master device 2241031003 offline!', 'deviceNo': '2241031003', ...}], 'reply': {'replyCode': 500, 'replyDesc': 'Internal Error'}})",
+      "time" : {
+        "start" : 1665897315860,
+        "stop" : 1665897316001,
+        "duration" : 141
+      }
+    } ]
+  },
+  "94d38dde9717d18e7b8f590311c13fe6" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ca1a57a9c141fe02",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'scriptSelector' in \"{'code': 11304, 'desc': 'Device is offline.', 'data': None}\"\n +  where \"{'code': 11304, 'desc': 'Device is offline.', 'data': None}\" = str({'code': 11304, 'data': None, 'desc': 'Device is offline.'})",
+      "time" : {
+        "start" : 1665897319585,
+        "stop" : 1665897319733,
+        "duration" : 148
+      }
+    } ]
+  },
+  "9981ed129587ddfdf99d1b2711b5b5a8" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "281c1319a24fb938",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert ('636F6E6E6563746564' in \"{'header': {'correlationId': 'f73cd9b1-6215-4c4b-9cc3-6e5dca82118f', 'messageId': '5564a27d-54b0-4925-9fec-1cf3db9fd9a2', 'serviceType': 'GET_COMMON', 'businessType': 'GET_COMMON', 'source': 'HES', 'createTime': '211230110521', 'messageType': 'RESPONSE'}, 'payload': [{'code': -166, 'desc': 'Master device 2241031003 offline!', 'deviceNo': '2241031003', 'deviceType': 'METER', 'executeStartTime': '221016101506', 'executeEndTime': '221016101506', 'transactionId': '2241031003_221016131508', 'data': []}], 'reply': {'replyCode': 500, 'replyDesc': 'Internal Error'}}\" or '646973636F6E6E6563746564' in \"{'header': {'correlationId': 'f73cd9b1-6215-4c4b-9cc3-6e5dca82118f', 'messageId': '5564a27d-54b0-4925-9fec-1cf3db9fd9a2', 'serviceType': 'GET_COMMON', 'businessType': 'GET_COMMON', 'source': 'HES', 'createTime': '211230110521', 'messageType': 'RESPONSE'}, 'payload': [{'code': -166, 'desc': 'Master device 2241031003 offline!', 'deviceNo': '2241031003', 'deviceType': 'METER', 'executeStartTime': '221016101506', 'executeEndTime': '221016101506', 'transactionId': '2241031003_221016131508', 'data': []}], 'reply': {'replyCode': 500, 'replyDesc': 'Internal Error'}}\")\n +  where \"{'header': {'correlationId': 'f73cd9b1-6215-4c4b-9cc3-6e5dca82118f', 'messageId': '5564a27d-54b0-4925-9fec-1cf3db9fd9a2', 'serviceType': 'GET_COMMON', 'businessType': 'GET_COMMON', 'source': 'HES', 'createTime': '211230110521', 'messageType': 'RESPONSE'}, 'payload': [{'code': -166, 'desc': 'Master device 2241031003 offline!', 'deviceNo': '2241031003', 'deviceType': 'METER', 'executeStartTime': '221016101506', 'executeEndTime': '221016101506', 'transactionId': '2241031003_221016131508', 'data': []}], 'reply': {'replyCode': 500, 'replyDesc': 'Internal Error'}}\" = str({'header': {'businessType': 'GET_COMMON', 'correlationId': 'f73cd9b1-6215-4c4b-9cc3-6e5dca82118f', 'createTime': '211230110521', 'messageId': '5564a27d-54b0-4925-9fec-1cf3db9fd9a2', ...}, 'payload': [{'code': -166, 'data': [], 'desc': 'Master device 2241031003 offline!', 'deviceNo': '2241031003', ...}], 'reply': {'replyCode': 500, 'replyDesc': 'Internal Error'}})\n +  and   \"{'header': {'correlationId': 'f73cd9b1-6215-4c4b-9cc3-6e5dca82118f', 'messageId': '5564a27d-54b0-4925-9fec-1cf3db9fd9a2', 'serviceType': 'GET_COMMON', 'businessType': 'GET_COMMON', 'source': 'HES', 'createTime': '211230110521', 'messageType': 'RESPONSE'}, 'payload': [{'code': -166, 'desc': 'Master device 2241031003 offline!', 'deviceNo': '2241031003', 'deviceType': 'METER', 'executeStartTime': '221016101506', 'executeEndTime': '221016101506', 'transactionId': '2241031003_221016131508', 'data': []}], 'reply': {'replyCode': 500, 'replyDesc': 'Internal Error'}}\" = str({'header': {'businessType': 'GET_COMMON', 'correlationId': 'f73cd9b1-6215-4c4b-9cc3-6e5dca82118f', 'createTime': '211230110521', 'messageId': '5564a27d-54b0-4925-9fec-1cf3db9fd9a2', ...}, 'payload': [{'code': -166, 'data': [], 'desc': 'Master device 2241031003 offline!', 'deviceNo': '2241031003', ...}], 'reply': {'replyCode': 500, 'replyDesc': 'Internal Error'}})",
+      "time" : {
+        "start" : 1665897308655,
+        "stop" : 1665897308775,
+        "duration" : 120
+      }
+    } ]
+  },
+  "5106484ac4a786992d001de669fcd6fa" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c01300ea40fc4a4d",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: Short Meter no online status",
+      "time" : {
+        "start" : 1665897299414,
+        "stop" : 1665897299414,
+        "duration" : 0
+      }
+    } ]
+  },
+  "98bf19e72749c5ea2c08a6f4fb32fb2a" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ba341256a5e4e70b",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 0 == 45\n  +0\n  -45",
+      "time" : {
+        "start" : 1665897291357,
+        "stop" : 1665897291491,
+        "duration" : 134
+      }
+    } ]
+  },
+  "13a96cc9a5dd360745d4352a725848a7" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "cd7b1f51e1859042",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False",
+      "time" : {
+        "start" : 1665897305200,
+        "stop" : 1665897305333,
+        "duration" : 133
+      }
+    } ]
+  },
+  "0f050a6495df74e8f69ead1cc4c5a017" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c493f41a9f115e0a",
+      "status" : "broken",
+      "statusDetails" : "IndexError: list index out of range",
+      "time" : {
+        "start" : 1665897292509,
+        "stop" : 1665897292651,
+        "duration" : 142
+      }
+    } ]
+  },
+  "e891266af69fed4a76ea7892a2bc4e63" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "eded2916ddc0f29b",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: Short Meter no online status",
+      "time" : {
+        "start" : 1665897299411,
+        "stop" : 1665897299411,
+        "duration" : 0
+      }
+    } ]
+  },
+  "eaddae4333bbcb28d80c67ad65b80b6f" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f357002d9dcd76b7",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'DISCONNECTED' in \"{'header': {'correlationId': '68e19310-1253-4a6c-bd9c-e60266e52429', 'messageId': 'e86814d1-0070-42d3-8c4f-6db00598b194', 'serviceType': 'RELAY_CONTROL', 'businessType': 'RELAY_CONTROL', 'source': 'HES', 'createTime': '20200910191946', 'messageType': 'RESPONSE'}, 'payload': [{'code': -166, 'desc': 'Master device 2241031003 offline!', 'deviceNo': '2241031003', 'deviceType': 'METER', 'executeStartTime': '221016101509', 'executeEndTime': '221016101509', 'transactionId': '5ebbd125-e1d0-4a90-b0af-6d13d22f78e6', 'data': []}], 'reply': {'replyCode': 500, 'replyDesc': 'Internal Error'}}\"\n +  where \"{'header': {'correlationId': '68e19310-1253-4a6c-bd9c-e60266e52429', 'messageId': 'e86814d1-0070-42d3-8c4f-6db00598b194', 'serviceType': 'RELAY_CONTROL', 'businessType': 'RELAY_CONTROL', 'source': 'HES', 'createTime': '20200910191946', 'messageType': 'RESPONSE'}, 'payload': [{'code': -166, 'desc': 'Master device 2241031003 offline!', 'deviceNo': '2241031003', 'deviceType': 'METER', 'executeStartTime': '221016101509', 'executeEndTime': '221016101509', 'transactionId': '5ebbd125-e1d0-4a90-b0af-6d13d22f78e6', 'data': []}], 'reply': {'replyCode': 500, 'replyDesc': 'Internal Error'}}\" = str({'header': {'businessType': 'RELAY_CONTROL', 'correlationId': '68e19310-1253-4a6c-bd9c-e60266e52429', 'createTime': '20200910191946', 'messageId': 'e86814d1-0070-42d3-8c4f-6db00598b194', ...}, 'payload': [{'code': -166, 'data': [], 'desc': 'Master device 2241031003 offline!', 'deviceNo': '2241031003', ...}], 'reply': {'replyCode': 500, 'replyDesc': 'Internal Error'}})",
+      "time" : {
+        "start" : 1665897310960,
+        "stop" : 1665897311101,
+        "duration" : 141
+      }
+    } ]
+  },
+  "bc70abf4ee9bdaffd72cb2849bd48716" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4a4bcfb16ccffdea",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'activeTariff' in \"{'code': 11304, 'desc': 'Device is offline.', 'data': None}\"\n +  where \"{'code': 11304, 'desc': 'Device is offline.', 'data': None}\" = str({'code': 11304, 'data': None, 'desc': 'Device is offline.'})",
+      "time" : {
+        "start" : 1665897317028,
+        "stop" : 1665897317420,
+        "duration" : 392
+      }
+    } ]
+  },
+  "448cc795ebfa9413e1d876341c111742" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1d0a18a9cb48af7",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'CONNECTED' in \"{'header': {'correlationId': '68e19310-1253-4a6c-bd9c-e60266e52429', 'messageId': 'af176bf7-404d-4e56-bcda-0be44d1adebf', 'serviceType': 'RELAY_CONTROL', 'businessType': 'RELAY_CONTROL', 'source': 'HES', 'createTime': '20200910191946', 'messageType': 'RESPONSE'}, 'payload': [{'code': -166, 'desc': 'Master device 2241031003 offline!', 'deviceNo': '2241031003', 'deviceType': 'METER', 'executeStartTime': '221016101510', 'executeEndTime': '221016101510', 'transactionId': '2241031003_221016131512', 'data': []}], 'reply': {'replyCode': 500, 'replyDesc': 'Internal Error'}}\"\n +  where \"{'header': {'correlationId': '68e19310-1253-4a6c-bd9c-e60266e52429', 'messageId': 'af176bf7-404d-4e56-bcda-0be44d1adebf', 'serviceType': 'RELAY_CONTROL', 'businessType': 'RELAY_CONTROL', 'source': 'HES', 'createTime': '20200910191946', 'messageType': 'RESPONSE'}, 'payload': [{'code': -166, 'desc': 'Master device 2241031003 offline!', 'deviceNo': '2241031003', 'deviceType': 'METER', 'executeStartTime': '221016101510', 'executeEndTime': '221016101510', 'transactionId': '2241031003_221016131512', 'data': []}], 'reply': {'replyCode': 500, 'replyDesc': 'Internal Error'}}\" = str({'header': {'businessType': 'RELAY_CONTROL', 'correlationId': '68e19310-1253-4a6c-bd9c-e60266e52429', 'createTime': '20200910191946', 'messageId': 'af176bf7-404d-4e56-bcda-0be44d1adebf', ...}, 'payload': [{'code': -166, 'data': [], 'desc': 'Master device 2241031003 offline!', 'deviceNo': '2241031003', ...}], 'reply': {'replyCode': 500, 'replyDesc': 'Internal Error'}})",
+      "time" : {
+        "start" : 1665897312130,
+        "stop" : 1665897312518,
+        "duration" : 388
+      }
+    } ]
+  },
+  "1e467e30a9c2d2095985699d4d285ec9" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "cb85e2123330698c",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False",
+      "time" : {
+        "start" : 1665897304034,
+        "stop" : 1665897304179,
+        "duration" : 145
+      }
+    } ]
+  },
+  "7b3a42a67577e8d9d09efbb939cffad1" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d8f85fe6bc02ae8a",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False",
+      "time" : {
+        "start" : 1665897295991,
+        "stop" : 1665897296111,
+        "duration" : 120
+      }
+    } ]
+  },
+  "29fbdc348a8626f2e31c7dcedfa96413" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "83649a5dd74f72d",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False",
+      "time" : {
+        "start" : 1665897293674,
+        "stop" : 1665897293810,
+        "duration" : 136
+      }
+    } ]
+  },
+  "ca87366991a20ff93a371d04eea318c8" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "55c2a1cebbc1f8dd",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'DISCONNECTED' in \"{'header': {'correlationId': '68e19310-1253-4a6c-bd9c-e60266e52429', 'messageId': '255801e7-af2d-4341-ac0b-318fd2377832', 'serviceType': 'RELAY_CONTROL', 'businessType': 'RELAY_CONTROL', 'source': 'HES', 'createTime': '20200910191946', 'messageType': 'RESPONSE'}, 'payload': [{'code': -166, 'desc': 'Master device 2241031003 offline!', 'deviceNo': '2241031003', 'deviceType': 'METER', 'executeStartTime': '221016101511', 'executeEndTime': '221016101511', 'transactionId': '2241031003_221016131513', 'data': []}], 'reply': {'replyCode': 500, 'replyDesc': 'Internal Error'}}\"\n +  where \"{'header': {'correlationId': '68e19310-1253-4a6c-bd9c-e60266e52429', 'messageId': '255801e7-af2d-4341-ac0b-318fd2377832', 'serviceType': 'RELAY_CONTROL', 'businessType': 'RELAY_CONTROL', 'source': 'HES', 'createTime': '20200910191946', 'messageType': 'RESPONSE'}, 'payload': [{'code': -166, 'desc': 'Master device 2241031003 offline!', 'deviceNo': '2241031003', 'deviceType': 'METER', 'executeStartTime': '221016101511', 'executeEndTime': '221016101511', 'transactionId': '2241031003_221016131513', 'data': []}], 'reply': {'replyCode': 500, 'replyDesc': 'Internal Error'}}\" = str({'header': {'businessType': 'RELAY_CONTROL', 'correlationId': '68e19310-1253-4a6c-bd9c-e60266e52429', 'createTime': '20200910191946', 'messageId': '255801e7-af2d-4341-ac0b-318fd2377832', ...}, 'payload': [{'code': -166, 'data': [], 'desc': 'Master device 2241031003 offline!', 'deviceNo': '2241031003', ...}], 'reply': {'replyCode': 500, 'replyDesc': 'Internal Error'}})",
+      "time" : {
+        "start" : 1665897313536,
+        "stop" : 1665897313672,
+        "duration" : 136
+      }
+    } ]
+  },
+  "c538d4627612590190015fb5ac455f12" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "60e7b712f8ef0ed4",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 500 == 200\n  +500\n  -200",
+      "time" : {
+        "start" : 1665897298265,
+        "stop" : 1665897298386,
+        "duration" : 121
+      }
+    } ]
+  },
+  "bd1ca79e7e3272a163602351de5e8c7a" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "aef49b269457d648",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False",
+      "time" : {
+        "start" : 1665897294836,
+        "stop" : 1665897294973,
+        "duration" : 137
+      }
+    } ]
+  },
+  "a582f56edcbd6b0467b33a31225d0fb0" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "88345da6af4edc89",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665897299424,
+        "stop" : 1665897299553,
+        "duration" : 129
+      }
+    } ]
+  },
+  "f88142b05a29e5e5b799e60b4d8b7e34" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ea11c510876ff400",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'scriptSelector' in \"{'code': 11304, 'desc': 'Device is offline.', 'data': None}\"\n +  where \"{'code': 11304, 'desc': 'Device is offline.', 'data': None}\" = str({'code': 11304, 'data': None, 'desc': 'Device is offline.'})",
+      "time" : {
+        "start" : 1665897318430,
+        "stop" : 1665897318568,
+        "duration" : 138
+      }
+    } ]
+  },
+  "55ba54c3a76e46ad65e8f50e46f019c2" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "751d144a5e8b6c88",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 500 == 200\n  +500\n  -200",
+      "time" : {
+        "start" : 1665897320755,
+        "stop" : 1665897320888,
+        "duration" : 133
+      }
+    } ]
+  },
+  "c542e2e83f4f19496b7dd5e11f9edf81" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "efb4e6ae7a823a00",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665897300568,
+        "stop" : 1665897300715,
+        "duration" : 147
+      }
+    } ]
+  },
+  "11cc38dbc9672791b6d1029ae7a20b09" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "19f7fd537394a8c2",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'CONNECTED' in \"{'header': {'correlationId': '68e19310-1253-4a6c-bd9c-e60266e52429', 'messageId': 'dd3cd827-0653-4192-bc62-6f3ef18a2f9e', 'serviceType': 'RELAY_CONTROL', 'businessType': 'RELAY_CONTROL', 'source': 'HES', 'createTime': '20200910191946', 'messageType': 'RESPONSE'}, 'payload': [{'code': -166, 'desc': 'Master device 2241031003 offline!', 'deviceNo': '2241031003', 'deviceType': 'METER', 'executeStartTime': '221016101507', 'executeEndTime': '221016101507', 'transactionId': '2241031003_221016131509', 'data': []}], 'reply': {'replyCode': 500, 'replyDesc': 'Internal Error'}}\"\n +  where \"{'header': {'correlationId': '68e19310-1253-4a6c-bd9c-e60266e52429', 'messageId': 'dd3cd827-0653-4192-bc62-6f3ef18a2f9e', 'serviceType': 'RELAY_CONTROL', 'businessType': 'RELAY_CONTROL', 'source': 'HES', 'createTime': '20200910191946', 'messageType': 'RESPONSE'}, 'payload': [{'code': -166, 'desc': 'Master device 2241031003 offline!', 'deviceNo': '2241031003', 'deviceType': 'METER', 'executeStartTime': '221016101507', 'executeEndTime': '221016101507', 'transactionId': '2241031003_221016131509', 'data': []}], 'reply': {'replyCode': 500, 'replyDesc': 'Internal Error'}}\" = str({'header': {'businessType': 'RELAY_CONTROL', 'correlationId': '68e19310-1253-4a6c-bd9c-e60266e52429', 'createTime': '20200910191946', 'messageId': 'dd3cd827-0653-4192-bc62-6f3ef18a2f9e', ...}, 'payload': [{'code': -166, 'data': [], 'desc': 'Master device 2241031003 offline!', 'deviceNo': '2241031003', ...}], 'reply': {'replyCode': 500, 'replyDesc': 'Internal Error'}})",
+      "time" : {
+        "start" : 1665897309791,
+        "stop" : 1665897309934,
+        "duration" : 143
+      }
+    } ]
+  },
+  "4f56dcb0cb79adb3e4285acb8253b9d5" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2441670ce53d90d",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False",
+      "time" : {
+        "start" : 1665897306350,
+        "stop" : 1665897306483,
+        "duration" : 133
+      }
+    } ]
+  },
+  "6b1d173bf7bab57868defb043012d9a1" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e5de927d7cd079b3",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 500 == 200\n  +500\n  -200",
+      "time" : {
+        "start" : 1665897290146,
+        "stop" : 1665897290285,
+        "duration" : 139
+      }
+    } ]
+  },
+  "2203135f6de08a396690796c37b3a6eb" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e63c8ee60686f022",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 500 == 200\n  +500\n  -200",
+      "time" : {
+        "start" : 1665897297126,
+        "stop" : 1665897297253,
+        "duration" : 127
+      }
+    } ]
+  },
+  "e3e0915bf464e279584284928e9c1222" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "80ba2bdde6d34173",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: Short Meter no online status",
+      "time" : {
+        "start" : 1665897299418,
+        "stop" : 1665897299418,
+        "duration" : 0
+      }
+    } ]
+  },
+  "e74df70bc331cd330c261848ed9eed02" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2d965fd8bb862322",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 500 == 200\n  +500\n  -200",
+      "time" : {
+        "start" : 1665897302877,
+        "stop" : 1665897303016,
+        "duration" : 139
+      }
+    } ]
+  },
+  "b2406162fb414ac8c0eaffac11a5487f" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "42e4260a8e3ff302",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 500 == 200\n  +500\n  -200",
+      "time" : {
+        "start" : 1665897321905,
+        "stop" : 1665897322043,
+        "duration" : 138
+      }
+    } ]
+  },
+  "aa36f170a636afab048c5a7e65e4e46f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "de8458d6c5c1b85a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665897301723,
+        "stop" : 1665897301860,
+        "duration" : 137
+      }
+    } ]
+  },
+  "9f08b6870eaeb04deeb042e7764bd7d9" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "68beb6dec4cf4e58",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'CONNECTED' in \"{'header': {'correlationId': '68e19310-1253-4a6c-bd9c-e60266e52429', 'messageId': 'f0d142fb-b21b-40a8-b111-f06c649b3a2e', 'serviceType': 'RELAY_CONTROL', 'businessType': 'RELAY_CONTROL', 'source': 'HES', 'createTime': '20200910191946', 'messageType': 'RESPONSE'}, 'payload': [{'code': -166, 'desc': 'Master device 2241031003 offline!', 'deviceNo': '2241031003', 'deviceType': 'METER', 'executeStartTime': '221016101512', 'executeEndTime': '221016101512', 'transactionId': '2241031003_221016131514', 'data': []}], 'reply': {'replyCode': 500, 'replyDesc': 'Internal Error'}}\"\n +  where \"{'header': {'correlationId': '68e19310-1253-4a6c-bd9c-e60266e52429', 'messageId': 'f0d142fb-b21b-40a8-b111-f06c649b3a2e', 'serviceType': 'RELAY_CONTROL', 'businessType': 'RELAY_CONTROL', 'source': 'HES', 'createTime': '20200910191946', 'messageType': 'RESPONSE'}, 'payload': [{'code': -166, 'desc': 'Master device 2241031003 offline!', 'deviceNo': '2241031003', 'deviceType': 'METER', 'executeStartTime': '221016101512', 'executeEndTime': '221016101512', 'transactionId': '2241031003_221016131514', 'data': []}], 'reply': {'replyCode': 500, 'replyDesc': 'Internal Error'}}\" = str({'header': {'businessType': 'RELAY_CONTROL', 'correlationId': '68e19310-1253-4a6c-bd9c-e60266e52429', 'createTime': '20200910191946', 'messageId': 'f0d142fb-b21b-40a8-b111-f06c649b3a2e', ...}, 'payload': [{'code': -166, 'data': [], 'desc': 'Master device 2241031003 offline!', 'deviceNo': '2241031003', ...}], 'reply': {'replyCode': 500, 'replyDesc': 'Internal Error'}})",
+      "time" : {
+        "start" : 1665897314691,
+        "stop" : 1665897314825,
+        "duration" : 134
+      }
+    } ]
+  },
+  "33116f5c9ffa91342508d562fcdd0fdd" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "68ad09e73e80bba6",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 500 == 200\n  +500\n  -200",
+      "time" : {
+        "start" : 1665897323065,
+        "stop" : 1665897323184,
+        "duration" : 119
+      }
+    } ]
+  },
+  "d7f0a153c3e456b14766a8ae536508c0" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e7634fb7186d3ebc",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False",
+      "time" : {
+        "start" : 1665897307502,
+        "stop" : 1665897307640,
+        "duration" : 138
+      }
+    } ]
+  }
+}

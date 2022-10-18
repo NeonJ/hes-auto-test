@@ -1,0 +1,190 @@
+{
+  "uid" : "80ba2bdde6d34173",
+  "name" : "test_get_device_online3",
+  "fullName" : "testCase.HESIntegration.Other_Interface.test_interface.Test_Meter_Status#test_get_device_online3",
+  "historyId" : "e3e0915bf464e279584284928e9c1222",
+  "time" : {
+    "start" : 1665897299418,
+    "stop" : 1665897299418,
+    "duration" : 0
+  },
+  "description" : "\n        验证接口获取电表和DCU上下线状态 getDeviceNoOnlineStatus\n        ",
+  "descriptionHtml" : "<pre><code>    验证接口获取电表和DCU上下线状态 getDeviceNoOnlineStatus\n</code></pre>\n",
+  "status" : "skipped",
+  "statusMessage" : "Skipped: Short Meter no online status",
+  "statusTrace" : "('D:\\\\git\\\\hes-auto-test\\\\testCase\\\\HESIntegration\\\\Other_Interface\\\\test_interface.py', 73, 'Skipped: Short Meter no online status')",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "device",
+    "time" : {
+      "start" : 1665897290144,
+      "stop" : 1665897290144,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "slow_down_tests",
+    "time" : {
+      "start" : 1665897299423,
+      "stop" : 1665897299423,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1665897285924,
+      "stop" : 1665897286028,
+      "duration" : 104
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "nacosData",
+    "time" : {
+      "start" : 1665897286029,
+      "stop" : 1665897290143,
+      "duration" : 4114
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "hesURL",
+    "time" : {
+      "start" : 1665897297126,
+      "stop" : 1665897297126,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "readConfig",
+    "time" : {
+      "start" : 1665897286028,
+      "stop" : 1665897286029,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "slow_down_tests::0",
+    "time" : {
+      "start" : 1665897299554,
+      "stop" : 1665897300563,
+      "duration" : 1009
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "hesURL::0",
+    "time" : {
+      "start" : 1665897324203,
+      "stop" : 1665897324203,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "@pytest.mark.skipif(True, reason='Short Meter no online status')"
+  }, {
+    "name" : "tag",
+    "value" : "smokeTest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.HESIntegration.Other_Interface"
+  }, {
+    "name" : "suite",
+    "value" : "test_interface"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Meter_Status"
+  }, {
+    "name" : "host",
+    "value" : "NeonPC"
+  }, {
+    "name" : "thread",
+    "value" : "20028-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.HESIntegration.Other_Interface.test_interface"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Ignored tests",
+      "matchedStatuses" : [ "skipped" ],
+      "flaky" : false
+    } ],
+    "tags" : [ "@pytest.mark.skipif(True, reason='Short Meter no online status')", "smokeTest" ]
+  },
+  "source" : "80ba2bdde6d34173.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,236 @@
+{
+  "uid" : "d8f85fe6bc02ae8a",
+  "name" : "test_get_monthly_date",
+  "fullName" : "testCase.HESIntegration.Monthly_Data_Check.test_meter_monthly.Test_Meter_Monthly#test_get_monthly_date",
+  "historyId" : "7b3a42a67577e8d9d09efbb939cffad1",
+  "time" : {
+    "start" : 1665897295991,
+    "stop" : 1665897296111,
+    "duration" : 120
+  },
+  "description" : "\n        使用同步读取的方式去对电表进行月结读取 - 按照Entry+Date方式进行并进行数据项对比\n         ",
+  "descriptionHtml" : "<pre><code>    使用同步读取的方式去对电表进行月结读取 - 按照Entry+Date方式进行并进行数据项对比\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False",
+  "statusTrace" : "self = <test_meter_monthly.Test_Meter_Monthly object at 0x0000022D16C27EB8>, caseData = <function caseData.<locals>.loadData at 0x0000022D1573F620>\nrequestMessage = 'http://54.179.93.135:32724/api/v1/Request/RequestMessage'\ndevice = {'communication_type': 'GPRS', 'connect_type': 'Short', 'device_number': 2241031003, 'device_type': 'Meter', ...}\nmonthly = {'entries': 3, 'entries_inuse_register_id': 'EOB Data Profile-7. entries_in_use', 'entries_register_id': 'EOB Data Profile-8. profile_entries', 'len': 0, ...}\n\n    @smokeTest\n    def test_get_monthly_date(self, caseData, requestMessage, device, monthly):\n        \"\"\"\n        使用同步读取的方式去对电表进行月结读取 - 按照Entry+Date方式进行并进行数据项对比\n         \"\"\"\n    \n        print(\"Step 1 : 获取当前电表第一条月结数据\")\n        data = caseData('testData/MeterFrozenData/meter_monthly_data.json')\n        requestData = data['meter_monthly_data']['request']\n        requestData['payload'][0]['deviceNo'] = device['device_number']\n        transactionId = str(device['device_number']) + '_' + time.strftime('%y%m%d%H%M%S',time.localtime())\n        requestData['payload'][0]['transactionId'] = transactionId\n        requestData['payload'][0]['data'][0]['registerId'] = monthly['register_id']\n        response, elapsed = HESRequest().post(url=requestMessage, params=requestData)\n        print('Response --- ', response)\n        if response.get('reply')['replyCode'] != 200:\n>           assert False\nE           assert False\n\ntestCase\\HESIntegration\\Monthly_Data_Check\\test_meter_monthly.py:49: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "device",
+    "time" : {
+      "start" : 1665897290144,
+      "stop" : 1665897290144,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "slow_down_tests",
+    "time" : {
+      "start" : 1665897295991,
+      "stop" : 1665897295991,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1665897285924,
+      "stop" : 1665897286028,
+      "duration" : 104
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "monthly",
+    "time" : {
+      "start" : 1665897294835,
+      "stop" : 1665897294835,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "nacosData",
+    "time" : {
+      "start" : 1665897286029,
+      "stop" : 1665897290143,
+      "duration" : 4114
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "caseData",
+    "time" : {
+      "start" : 1665897290144,
+      "stop" : 1665897290144,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "readConfig",
+    "time" : {
+      "start" : 1665897286028,
+      "stop" : 1665897286029,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "requestMessage",
+    "time" : {
+      "start" : 1665897290144,
+      "stop" : 1665897290144,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        使用同步读取的方式去对电表进行月结读取 - 按照Entry+Date方式进行并进行数据项对比\n         ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False",
+    "statusTrace" : "self = <test_meter_monthly.Test_Meter_Monthly object at 0x0000022D16C27EB8>, caseData = <function caseData.<locals>.loadData at 0x0000022D1573F620>\nrequestMessage = 'http://54.179.93.135:32724/api/v1/Request/RequestMessage'\ndevice = {'communication_type': 'GPRS', 'connect_type': 'Short', 'device_number': 2241031003, 'device_type': 'Meter', ...}\nmonthly = {'entries': 3, 'entries_inuse_register_id': 'EOB Data Profile-7. entries_in_use', 'entries_register_id': 'EOB Data Profile-8. profile_entries', 'len': 0, ...}\n\n    @smokeTest\n    def test_get_monthly_date(self, caseData, requestMessage, device, monthly):\n        \"\"\"\n        使用同步读取的方式去对电表进行月结读取 - 按照Entry+Date方式进行并进行数据项对比\n         \"\"\"\n    \n        print(\"Step 1 : 获取当前电表第一条月结数据\")\n        data = caseData('testData/MeterFrozenData/meter_monthly_data.json')\n        requestData = data['meter_monthly_data']['request']\n        requestData['payload'][0]['deviceNo'] = device['device_number']\n        transactionId = str(device['device_number']) + '_' + time.strftime('%y%m%d%H%M%S',time.localtime())\n        requestData['payload'][0]['transactionId'] = transactionId\n        requestData['payload'][0]['data'][0]['registerId'] = monthly['register_id']\n        response, elapsed = HESRequest().post(url=requestMessage, params=requestData)\n        print('Response --- ', response)\n        if response.get('reply')['replyCode'] != 200:\n>           assert False\nE           assert False\n\ntestCase\\HESIntegration\\Monthly_Data_Check\\test_meter_monthly.py:49: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "1174b178e281d6fb",
+      "name" : "stdout",
+      "source" : "1174b178e281d6fb.txt",
+      "type" : "text/plain",
+      "size" : 1559
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "slow_down_tests::0",
+    "time" : {
+      "start" : 1665897296119,
+      "stop" : 1665897297123,
+      "duration" : 1004
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "requestMessage::0",
+    "time" : {
+      "start" : 1665897324202,
+      "stop" : 1665897324202,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "smokeTest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.HESIntegration.Monthly_Data_Check"
+  }, {
+    "name" : "suite",
+    "value" : "test_meter_monthly"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Meter_Monthly"
+  }, {
+    "name" : "host",
+    "value" : "NeonPC"
+  }, {
+    "name" : "thread",
+    "value" : "20028-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.HESIntegration.Monthly_Data_Check.test_meter_monthly"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Total Defects",
+      "matchedStatuses" : [ "failed" ],
+      "flaky" : false
+    } ],
+    "tags" : [ "smokeTest" ]
+  },
+  "source" : "d8f85fe6bc02ae8a.json",
+  "parameterValues" : [ ]
+}

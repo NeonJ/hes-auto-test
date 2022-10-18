@@ -1,0 +1,25 @@
+[ {
+  "values" : [ "'False'" ],
+  "name" : "resume"
+}, {
+  "values" : [ "/" ],
+  "name" : "path"
+}, {
+  "values" : [ "Neon" ],
+  "name" : "tester"
+}, {
+  "values" : [ "camel10-DC" ],
+  "name" : "project"
+}, {
+  "values" : [ "http://localhost:8848" ],
+  "name" : "nacos_url"
+}, {
+  "values" : [ "smokeTest" ],
+  "name" : "tag"
+}, {
+  "values" : [ "'0'" ],
+  "name" : "retry"
+}, {
+  "values" : [ "QA" ],
+  "name" : "group"
+} ]

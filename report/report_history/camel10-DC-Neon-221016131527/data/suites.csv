@@ -1,0 +1,91 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Sun Oct 16 13:15:15 CST 2022","Sun Oct 16 13:15:16 CST 2022","141","testCase.HESIntegration.Relay_Control","test_relay_control","Test_Relay_Control","","","test_relay_off_home","
+        调用Home界面拉闸接口
+         "
+"failed","Sun Oct 16 13:15:07 CST 2022","Sun Oct 16 13:15:07 CST 2022","138","testCase.HESIntegration.Profile_Data_Check","test_meter_profile","Test_Meter_Profile","","","test_get_pq_date","
+        使用同步读取的方式去对电表进行pq读取 - 按照Entry+Date方式进行并进行数据项对比
+         "
+"failed","Sun Oct 16 13:15:06 CST 2022","Sun Oct 16 13:15:06 CST 2022","133","testCase.HESIntegration.Profile_Data_Check","test_meter_profile","Test_Meter_Profile","","","test_get_pq_entries","
+        使用同步读取的方式去对电表进行pq entries数据对比
+        "
+"failed","Sun Oct 16 13:14:55 CST 2022","Sun Oct 16 13:14:56 CST 2022","120","testCase.HESIntegration.Monthly_Data_Check","test_meter_monthly","Test_Meter_Monthly","","","test_get_monthly_date","
+        使用同步读取的方式去对电表进行月结读取 - 按照Entry+Date方式进行并进行数据项对比
+         "
+"skipped","Sun Oct 16 13:14:59 CST 2022","Sun Oct 16 13:14:59 CST 2022","0","testCase.HESIntegration.Other_Interface","test_interface","Test_Meter_Status","","","test_get_device_online1","
+        验证接口获取电表和DCU上下线状态 GetOnlineDevice
+        "
+"passed","Sun Oct 16 13:15:01 CST 2022","Sun Oct 16 13:15:01 CST 2022","137","testCase.HESIntegration.Other_Interface","test_interface","Test_Meter_Status","","","test_SuspendMasterCoreTask2","
+        验证接口启动MasterCore任务生成，加载，分发
+        "
+"failed","Sun Oct 16 13:15:10 CST 2022","Sun Oct 16 13:15:11 CST 2022","141","testCase.HESIntegration.Relay_Control","test_relay_control","Test_Relay_Control","","","test_relay_on_standard_2","
+        同步标准合闸 - 拉闸状态去合闸
+         "
+"failed","Sun Oct 16 13:15:20 CST 2022","Sun Oct 16 13:15:20 CST 2022","133","testCase.HESIntegration.Tariff","test_get_meter_tariff_new","Test_Get_Meter_Tariff_New","","","test_get_tariff_new_all","
+        使用RequestMessage请求Active和Passive费率
+        "
+"skipped","Sun Oct 16 13:14:59 CST 2022","Sun Oct 16 13:14:59 CST 2022","0","testCase.HESIntegration.Other_Interface","test_interface","Test_Meter_Status","","","test_get_device_online3","
+        验证接口获取电表和DCU上下线状态 getDeviceNoOnlineStatus
+        "
+"failed","Sun Oct 16 13:14:53 CST 2022","Sun Oct 16 13:14:53 CST 2022","136","testCase.HESIntegration.Event_Check","test_meter_event","Test_Meter_Event","","","test_get_standard_event","
+        使用同步读取的方式去对电表进行standard event读取 - 按照Entry+Date方式进行并进行数据项对比
+         "
+"passed","Sun Oct 16 13:14:59 CST 2022","Sun Oct 16 13:14:59 CST 2022","129","testCase.HESIntegration.Other_Interface","test_interface","Test_Meter_Status","","","test_MasterCoreState","
+        验证接口获取MasterCore任务状态
+        "
+"skipped","Sun Oct 16 13:14:59 CST 2022","Sun Oct 16 13:14:59 CST 2022","0","testCase.HESIntegration.Other_Interface","test_interface","Test_Meter_Status","","","test_get_device_online2","
+        验证接口获取电表和DCU上下线状态 getMeterOnlineStatus
+        "
+"failed","Sun Oct 16 13:15:18 CST 2022","Sun Oct 16 13:15:18 CST 2022","138","testCase.HESIntegration.Tariff","test_get_meter_tariff","Test_Get_Meter_Tariff","","","test_GetMeterTariff_Passive",""
+"failed","Sun Oct 16 13:14:50 CST 2022","Sun Oct 16 13:14:50 CST 2022","139","testCase.HESIntegration.Daily_Data_Check","test_meter_daily","Test_Meter_Daily","","","test_get_daily_entries","
+        使用同步读取的方式去对电表进行日结entries数据对比
+        "
+"failed","Sun Oct 16 13:15:21 CST 2022","Sun Oct 16 13:15:22 CST 2022","138","testCase.HESIntegration.Tariff","test_get_meter_tariff_new","Test_Get_Meter_Tariff_New","","","test_get_tariff_new_active","
+        使用RequestMessage请求Active费率
+        "
+"failed","Sun Oct 16 13:15:05 CST 2022","Sun Oct 16 13:15:05 CST 2022","133","testCase.HESIntegration.Profile_Data_Check","test_meter_profile","Test_Meter_Profile","","","test_get_lp_date","
+        使用同步读取的方式去对电表进行lp读取 - 按照Entry+Date方式进行并进行数据项对比
+         "
+"failed","Sun Oct 16 13:15:13 CST 2022","Sun Oct 16 13:15:13 CST 2022","136","testCase.HESIntegration.Relay_Control","test_relay_control","Test_Relay_Control","","","test_relay_off_standard_2","
+        同步标准拉闸 - 拉闸状态去拉闸
+         "
+"failed","Sun Oct 16 13:15:12 CST 2022","Sun Oct 16 13:15:12 CST 2022","388","testCase.HESIntegration.Relay_Control","test_relay_control","Test_Relay_Control","","","test_relay_off_standard_1","
+        同步标准拉闸 - 合闸状态去拉闸
+         "
+"failed","Sun Oct 16 13:14:58 CST 2022","Sun Oct 16 13:14:58 CST 2022","121","testCase.HESIntegration.Other_Interface","test_interface","Test_Meter_Status","","","test_get_meter_time","
+        同步读取时间，同步修改时间
+        "
+"failed","Sun Oct 16 13:15:08 CST 2022","Sun Oct 16 13:15:08 CST 2022","120","testCase.HESIntegration.Relay_Control","test_meter_relay_status","Test_Meter_Relay_Status","","","test_read_relay_status_sync","
+        使用同步读取的方式去对电表进行读取闸状态
+         "
+"failed","Sun Oct 16 13:15:14 CST 2022","Sun Oct 16 13:15:14 CST 2022","134","testCase.HESIntegration.Relay_Control","test_relay_control","Test_Relay_Control","","","test_relay_on_home","
+        调用Home界面合闸接口
+         "
+"failed","Sun Oct 16 13:15:17 CST 2022","Sun Oct 16 13:15:17 CST 2022","392","testCase.HESIntegration.Tariff","test_get_meter_tariff","Test_Get_Meter_Tariff","","","test_GetMeterTariff_Active",""
+"failed","Sun Oct 16 13:14:57 CST 2022","Sun Oct 16 13:14:57 CST 2022","127","testCase.HESIntegration.Other_Interface","test_interface","Test_Meter_Status","","","test_get_meter_status","
+        验证接口获取电表状态字
+        "
+"failed","Sun Oct 16 13:15:09 CST 2022","Sun Oct 16 13:15:09 CST 2022","143","testCase.HESIntegration.Relay_Control","test_relay_control","Test_Relay_Control","","","test_relay_on_standard_1","
+        同步标准合闸 - 合闸状态去合闸
+         "
+"broken","Sun Oct 16 13:14:52 CST 2022","Sun Oct 16 13:14:52 CST 2022","142","testCase.HESIntegration.Event_Check","test_meter_event","Test_Meter_Event","","","test_get_standard_event_entries","
+        使用同步读取的方式去对电表进行日事件entries数据对比
+        "
+"failed","Sun Oct 16 13:15:19 CST 2022","Sun Oct 16 13:15:19 CST 2022","148","testCase.HESIntegration.Tariff","test_get_meter_tariff","Test_Get_Meter_Tariff","","","test_GetMeterTariff_All",""
+"failed","Sun Oct 16 13:15:02 CST 2022","Sun Oct 16 13:15:03 CST 2022","139","testCase.HESIntegration.Phase_Vector","test_phase_vector","Test_Phase_Vector","","","test_get_vector","
+        使用同步读取三相表或者CT表相位夹角
+        "
+"failed","Sun Oct 16 13:15:23 CST 2022","Sun Oct 16 13:15:23 CST 2022","119","testCase.HESIntegration.Tariff","test_get_meter_tariff_new","Test_Get_Meter_Tariff_New","","","test_get_tariff_new_passive","
+        使用RequestMessage请求Passive费率
+        "
+"failed","Sun Oct 16 13:14:51 CST 2022","Sun Oct 16 13:14:51 CST 2022","134","testCase.HESIntegration.Daily_Data_Check","test_meter_daily","Test_Meter_Daily","","","test_get_daily_date","
+        使用同步读取的方式去对电表进行日结读取 - 按照Entry+Date方式进行并进行数据项对比
+        "
+"failed","Sun Oct 16 13:14:54 CST 2022","Sun Oct 16 13:14:54 CST 2022","137","testCase.HESIntegration.Monthly_Data_Check","test_meter_monthly","Test_Meter_Monthly","","","test_get_monthly_entries","
+        使用同步读取的方式去对电表进行月结entries数据对比
+        "
+"passed","Sun Oct 16 13:15:00 CST 2022","Sun Oct 16 13:15:00 CST 2022","147","testCase.HESIntegration.Other_Interface","test_interface","Test_Meter_Status","","","test_SuspendMasterCoreTask1","
+        验证接口暂停MasterCore任务生成，加载，分发
+        "
+"failed","Sun Oct 16 13:15:04 CST 2022","Sun Oct 16 13:15:04 CST 2022","145","testCase.HESIntegration.Profile_Data_Check","test_meter_profile","Test_Meter_Profile","","","test_get_lp_entries","
+        使用同步读取的方式去对电表进行lp entries数据对比
+        "

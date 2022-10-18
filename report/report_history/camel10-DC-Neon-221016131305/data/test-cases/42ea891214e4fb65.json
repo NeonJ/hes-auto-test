@@ -1,0 +1,248 @@
+{
+  "uid" : "42ea891214e4fb65",
+  "name" : "test_get_daily_entries",
+  "fullName" : "testCase.HESIntegration.Daily_Data_Check.test_meter_daily.Test_Meter_Daily#test_get_daily_entries",
+  "historyId" : "6b1d173bf7bab57868defb043012d9a1",
+  "time" : {
+    "start" : 1665897147803,
+    "stop" : 1665897147946,
+    "duration" : 143
+  },
+  "description" : "\n        使用同步读取的方式去对电表进行日结entries数据对比\n        ",
+  "descriptionHtml" : "<pre><code>    使用同步读取的方式去对电表进行日结entries数据对比\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 500 == 200\n  +500\n  -200",
+  "statusTrace" : "self = <test_meter_daily.Test_Meter_Daily object at 0x000002A30D37FE80>, caseData = <function caseData.<locals>.loadData at 0x000002A30BEEE620>\nrequestMessage = 'http://54.179.93.135:32724/api/v1/Request/RequestMessage'\ndevice = {'communication_type': 'GPRS', 'connect_type': 'Short', 'device_number': 2241031003, 'device_type': 'Meter', ...}\ndaily = {'entries': 3, 'entries_inuse_register_id': 'Daily billing-7. entries_in_use', 'entries_register_id': 'Daily billing-8. profile_entries', 'len': 45, ...}\n\n    @smokeTest\n    def test_get_daily_entries(self, caseData, requestMessage, device, daily):\n        \"\"\"\n        使用同步读取的方式去对电表进行日结entries数据对比\n        \"\"\"\n        data = caseData('testData/MeterFrozenData/meter_daily_data.json')\n        requestData = data['meter_daily_entries']['request']\n        requestData['payload'][0]['deviceNo'] = device['device_number']\n        transactionId = str(device['device_number']) + '_' + time.strftime('%y%m%d%H%M%S', time.localtime())\n        requestData['payload'][0]['transactionId'] = transactionId\n        requestData['payload'][0]['data'][0]['registerId'] = daily['entries_register_id']\n        response, elapsed = HESRequest().post(url=requestMessage, params=requestData)\n        print('Response --- ', response)\n>       assert response.get('reply')['replyCode'] == 200\nE       assert 500 == 200\nE         +500\nE         -200\n\ntestCase\\HESIntegration\\Daily_Data_Check\\test_meter_daily.py:46: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1665897143544,
+      "stop" : 1665897143651,
+      "duration" : 107
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "device",
+    "time" : {
+      "start" : 1665897147801,
+      "stop" : 1665897147801,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "requestMessage",
+    "time" : {
+      "start" : 1665897147801,
+      "stop" : 1665897147801,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "readConfig",
+    "time" : {
+      "start" : 1665897143651,
+      "stop" : 1665897143652,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "caseData",
+    "time" : {
+      "start" : 1665897147801,
+      "stop" : 1665897147801,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "slow_down_tests",
+    "time" : {
+      "start" : 1665897147802,
+      "stop" : 1665897147802,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "nacosData",
+    "time" : {
+      "start" : 1665897143652,
+      "stop" : 1665897147801,
+      "duration" : 4149
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "daily",
+    "time" : {
+      "start" : 1665897147802,
+      "stop" : 1665897147802,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n        使用同步读取的方式去对电表进行日结entries数据对比\n        ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 500 == 200\n  +500\n  -200",
+    "statusTrace" : "self = <test_meter_daily.Test_Meter_Daily object at 0x000002A30D37FE80>, caseData = <function caseData.<locals>.loadData at 0x000002A30BEEE620>\nrequestMessage = 'http://54.179.93.135:32724/api/v1/Request/RequestMessage'\ndevice = {'communication_type': 'GPRS', 'connect_type': 'Short', 'device_number': 2241031003, 'device_type': 'Meter', ...}\ndaily = {'entries': 3, 'entries_inuse_register_id': 'Daily billing-7. entries_in_use', 'entries_register_id': 'Daily billing-8. profile_entries', 'len': 45, ...}\n\n    @smokeTest\n    def test_get_daily_entries(self, caseData, requestMessage, device, daily):\n        \"\"\"\n        使用同步读取的方式去对电表进行日结entries数据对比\n        \"\"\"\n        data = caseData('testData/MeterFrozenData/meter_daily_data.json')\n        requestData = data['meter_daily_entries']['request']\n        requestData['payload'][0]['deviceNo'] = device['device_number']\n        transactionId = str(device['device_number']) + '_' + time.strftime('%y%m%d%H%M%S', time.localtime())\n        requestData['payload'][0]['transactionId'] = transactionId\n        requestData['payload'][0]['data'][0]['registerId'] = daily['entries_register_id']\n        response, elapsed = HESRequest().post(url=requestMessage, params=requestData)\n        print('Response --- ', response)\n>       assert response.get('reply')['replyCode'] == 200\nE       assert 500 == 200\nE         +500\nE         -200\n\ntestCase\\HESIntegration\\Daily_Data_Check\\test_meter_daily.py:46: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "481409e3931ec751",
+      "name" : "log",
+      "source" : "481409e3931ec751.txt",
+      "type" : "text/plain",
+      "size" : 1071
+    }, {
+      "uid" : "dad18b52f3c3f8ba",
+      "name" : "stdout",
+      "source" : "dad18b52f3c3f8ba.txt",
+      "type" : "text/plain",
+      "size" : 1121
+    }, {
+      "uid" : "b99a751e6a95d8a1",
+      "name" : "stderr",
+      "source" : "b99a751e6a95d8a1.txt",
+      "type" : "text/plain",
+      "size" : 958
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 3
+  },
+  "afterStages" : [ {
+    "name" : "requestMessage::0",
+    "time" : {
+      "start" : 1665897181776,
+      "stop" : 1665897181777,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "slow_down_tests::0",
+    "time" : {
+      "start" : 1665897148008,
+      "stop" : 1665897149012,
+      "duration" : 1004
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "smokeTest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.HESIntegration.Daily_Data_Check"
+  }, {
+    "name" : "suite",
+    "value" : "test_meter_daily"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Meter_Daily"
+  }, {
+    "name" : "host",
+    "value" : "NeonPC"
+  }, {
+    "name" : "thread",
+    "value" : "23776-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.HESIntegration.Daily_Data_Check.test_meter_daily"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Total Defects",
+      "matchedStatuses" : [ "failed" ],
+      "flaky" : false
+    } ],
+    "tags" : [ "smokeTest" ]
+  },
+  "source" : "42ea891214e4fb65.json",
+  "parameterValues" : [ ]
+}

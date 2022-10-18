@@ -1,0 +1,236 @@
+{
+  "uid" : "89c822fb78099f22",
+  "name" : "test_get_standard_event",
+  "fullName" : "testCase.HESIntegration.Event_Check.test_meter_event.Test_Meter_Event#test_get_standard_event",
+  "historyId" : "29fbdc348a8626f2e31c7dcedfa96413",
+  "time" : {
+    "start" : 1665897151339,
+    "stop" : 1665897151475,
+    "duration" : 136
+  },
+  "description" : "\n        使用同步读取的方式去对电表进行standard event读取 - 按照Entry+Date方式进行并进行数据项对比\n         ",
+  "descriptionHtml" : "<pre><code>    使用同步读取的方式去对电表进行standard event读取 - 按照Entry+Date方式进行并进行数据项对比\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False",
+  "statusTrace" : "self = <test_meter_event.Test_Meter_Event object at 0x000002A30D3DF550>, caseData = <function caseData.<locals>.loadData at 0x000002A30BEEE620>\nrequestMessage = 'http://54.179.93.135:32724/api/v1/Request/RequestMessage'\ndevice = {'communication_type': 'GPRS', 'connect_type': 'Short', 'device_number': 2241031003, 'device_type': 'Meter', ...}\nevent = {'entries': 1440, 'entries_inuse_register_id': 'Standard event log inuse', 'entries_register_id': 'Standard event log entries', 'len': 2, ...}\n\n    @smokeTest\n    def test_get_standard_event(self, caseData, requestMessage, device, event):\n        \"\"\"\n        使用同步读取的方式去对电表进行standard event读取 - 按照Entry+Date方式进行并进行数据项对比\n         \"\"\"\n        print(\"Step 1 : 获取当前电表第一条standard event数据\")\n        data = caseData('testData/MeterFrozenData/meter_event_data.json')\n        requestData = data['meter_standard_event']['request']\n        requestData['payload'][0]['deviceNo'] = device['device_number']\n        transactionId = str(device['device_number']) + '_' + time.strftime('%y%m%d%H%M%S',time.localtime())\n        requestData['payload'][0]['transactionId'] = transactionId\n        requestData['payload'][0]['data'][0]['registerId'] = event['standard_register_id']\n        response, elapsed = HESRequest().post(url=requestMessage, params=requestData)\n        if response.get('reply')['replyCode'] != 200:\n            print(response.get('payload')[0]['desc'])\n>           assert False\nE           assert False\n\ntestCase\\HESIntegration\\Event_Check\\test_meter_event.py:46: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1665897143544,
+      "stop" : 1665897143651,
+      "duration" : 107
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "slow_down_tests",
+    "time" : {
+      "start" : 1665897151339,
+      "stop" : 1665897151339,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "device",
+    "time" : {
+      "start" : 1665897147801,
+      "stop" : 1665897147801,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "requestMessage",
+    "time" : {
+      "start" : 1665897147801,
+      "stop" : 1665897147801,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "readConfig",
+    "time" : {
+      "start" : 1665897143651,
+      "stop" : 1665897143652,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "caseData",
+    "time" : {
+      "start" : 1665897147801,
+      "stop" : 1665897147801,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "nacosData",
+    "time" : {
+      "start" : 1665897143652,
+      "stop" : 1665897147801,
+      "duration" : 4149
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "event",
+    "time" : {
+      "start" : 1665897150168,
+      "stop" : 1665897150168,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n        使用同步读取的方式去对电表进行standard event读取 - 按照Entry+Date方式进行并进行数据项对比\n         ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False",
+    "statusTrace" : "self = <test_meter_event.Test_Meter_Event object at 0x000002A30D3DF550>, caseData = <function caseData.<locals>.loadData at 0x000002A30BEEE620>\nrequestMessage = 'http://54.179.93.135:32724/api/v1/Request/RequestMessage'\ndevice = {'communication_type': 'GPRS', 'connect_type': 'Short', 'device_number': 2241031003, 'device_type': 'Meter', ...}\nevent = {'entries': 1440, 'entries_inuse_register_id': 'Standard event log inuse', 'entries_register_id': 'Standard event log entries', 'len': 2, ...}\n\n    @smokeTest\n    def test_get_standard_event(self, caseData, requestMessage, device, event):\n        \"\"\"\n        使用同步读取的方式去对电表进行standard event读取 - 按照Entry+Date方式进行并进行数据项对比\n         \"\"\"\n        print(\"Step 1 : 获取当前电表第一条standard event数据\")\n        data = caseData('testData/MeterFrozenData/meter_event_data.json')\n        requestData = data['meter_standard_event']['request']\n        requestData['payload'][0]['deviceNo'] = device['device_number']\n        transactionId = str(device['device_number']) + '_' + time.strftime('%y%m%d%H%M%S',time.localtime())\n        requestData['payload'][0]['transactionId'] = transactionId\n        requestData['payload'][0]['data'][0]['registerId'] = event['standard_register_id']\n        response, elapsed = HESRequest().post(url=requestMessage, params=requestData)\n        if response.get('reply')['replyCode'] != 200:\n            print(response.get('payload')[0]['desc'])\n>           assert False\nE           assert False\n\ntestCase\\HESIntegration\\Event_Check\\test_meter_event.py:46: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b183bb55cd2fb6f3",
+      "name" : "stdout",
+      "source" : "b183bb55cd2fb6f3.txt",
+      "type" : "text/plain",
+      "size" : 1013
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "slow_down_tests::0",
+    "time" : {
+      "start" : 1665897151482,
+      "stop" : 1665897152484,
+      "duration" : 1002
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "requestMessage::0",
+    "time" : {
+      "start" : 1665897181776,
+      "stop" : 1665897181777,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "smokeTest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.HESIntegration.Event_Check"
+  }, {
+    "name" : "suite",
+    "value" : "test_meter_event"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Meter_Event"
+  }, {
+    "name" : "host",
+    "value" : "NeonPC"
+  }, {
+    "name" : "thread",
+    "value" : "23776-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.HESIntegration.Event_Check.test_meter_event"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Total Defects",
+      "matchedStatuses" : [ "failed" ],
+      "flaky" : false
+    } ],
+    "tags" : [ "smokeTest" ]
+  },
+  "source" : "89c822fb78099f22.json",
+  "parameterValues" : [ ]
+}

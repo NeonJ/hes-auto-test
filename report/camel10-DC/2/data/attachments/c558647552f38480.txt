@@ -1,0 +1,2 @@
+http://54.179.93.135:32724/api/v1/Request/RequestMessage
+Request ---  {'header': {'correlationId': '68e19310-1253-4a6c-bd9c-e60266e52429', 'messageId': '05a98597-fa9c-49bd-99ca-69d30d30dace', 'createTime': '20200910191946', 'serviceType': 'RELAY_CONTROL', 'businessType': 'RELAY_CONTROL', 'source': 'MDM', 'messageType': 'REQUEST', 'securityLevel': 0, 'asyncReplyFlag': False}, 'payload': [{'deviceNo': 2241031003, 'deviceType': 'METER', 'transactionId': '5ebbd125-e1d0-4a90-b0af-6d13d22f78e6', 'data': [{'featurePoint': 'fp.relayControl.relayOff.standard'}]}]}

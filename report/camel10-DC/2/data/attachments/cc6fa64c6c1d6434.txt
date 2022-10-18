@@ -1,0 +1,10 @@
+[33mWARNING [0m nacos.client:client.py:663 [do-sync-req] http://localhost:8848 connection error:[WinError 10061] 由于目标计算机积极拒绝，无法连接。
+[1m[31mERROR   [0m nacos.client:client.py:667 [do-sync-req] http://localhost:8848 maybe down, no server is currently available
+[1m[31mERROR   [0m nacos.client:client.py:418 [get-config] exception All server are not available occur
+Traceback (most recent call last):
+  File "c:\users\neon\appdata\local\programs\python\python36\lib\site-packages\nacos\client.py", line 395, in get_config
+    resp = self._do_sync_req("/nacos/v1/cs/configs", None, params, None, timeout or self.default_timeout)
+  File "c:\users\neon\appdata\local\programs\python\python36\lib\site-packages\nacos\client.py", line 668, in _do_sync_req
+    raise NacosRequestException("All server are not available")
+nacos.exception.NacosRequestException: All server are not available
+[1m[31mERROR   [0m nacos.client:client.py:437 [get-config] get config from server failed, try snapshot, data_id:camel10-DC, group:QA, namespace:HES

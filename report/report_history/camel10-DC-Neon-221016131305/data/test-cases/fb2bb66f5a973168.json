@@ -1,0 +1,236 @@
+{
+  "uid" : "fb2bb66f5a973168",
+  "name" : "test_get_pq_date",
+  "fullName" : "testCase.HESIntegration.Profile_Data_Check.test_meter_profile.Test_Meter_Profile#test_get_pq_date",
+  "historyId" : "d7f0a153c3e456b14766a8ae536508c0",
+  "time" : {
+    "start" : 1665897165534,
+    "stop" : 1665897165685,
+    "duration" : 151
+  },
+  "description" : "\n        使用同步读取的方式去对电表进行pq读取 - 按照Entry+Date方式进行并进行数据项对比\n         ",
+  "descriptionHtml" : "<pre><code>    使用同步读取的方式去对电表进行pq读取 - 按照Entry+Date方式进行并进行数据项对比\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False",
+  "statusTrace" : "self = <test_meter_profile.Test_Meter_Profile object at 0x000002A30D3F93C8>, caseData = <function caseData.<locals>.loadData at 0x000002A30BEEE620>\nrequestMessage = 'http://54.179.93.135:32724/api/v1/Request/RequestMessage'\ndevice = {'communication_type': 'GPRS', 'connect_type': 'Short', 'device_number': 2241031003, 'device_type': 'Meter', ...}\npq = {'entries': 1440, 'entries_inuse_register_id': 'Average Voltages and Currents Profile-7. entries_in_use', 'entries_register_id': 'Average Voltages and Currents Profile-8. profile_entries', 'len': 16, ...}\n\n    @smokeTest\n    def test_get_pq_date(self, caseData, requestMessage, device, pq):\n        \"\"\"\n        使用同步读取的方式去对电表进行pq读取 - 按照Entry+Date方式进行并进行数据项对比\n         \"\"\"\n    \n        print(\"Step 1 : 获取当前电表第一条pq数据\")\n        data = caseData('testData/MeterFrozenData/meter_profile_data.json')\n        requestData = data['meter_pq_data']['request']\n        requestData['payload'][0]['deviceNo'] = device['device_number']\n        transactionId = str(device['device_number']) + '_' + time.strftime('%y%m%d%H%M%S', time.localtime())\n        requestData['payload'][0]['transactionId'] = transactionId\n        requestData['payload'][0]['data'][0]['registerId'] = pq['register_id']\n        response, elapsed = HESRequest().post(url=requestMessage, params=requestData)\n        print('Response --- ', response)\n        if response.get('reply')['replyCode'] != 200:\n>           assert False\nE           assert False\n\ntestCase\\HESIntegration\\Profile_Data_Check\\test_meter_profile.py:95: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1665897143544,
+      "stop" : 1665897143651,
+      "duration" : 107
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "device",
+    "time" : {
+      "start" : 1665897147801,
+      "stop" : 1665897147801,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "requestMessage",
+    "time" : {
+      "start" : 1665897147801,
+      "stop" : 1665897147801,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "readConfig",
+    "time" : {
+      "start" : 1665897143651,
+      "stop" : 1665897143652,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "caseData",
+    "time" : {
+      "start" : 1665897147801,
+      "stop" : 1665897147801,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "slow_down_tests",
+    "time" : {
+      "start" : 1665897165533,
+      "stop" : 1665897165533,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "nacosData",
+    "time" : {
+      "start" : 1665897143652,
+      "stop" : 1665897147801,
+      "duration" : 4149
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "pq",
+    "time" : {
+      "start" : 1665897164399,
+      "stop" : 1665897164399,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n        使用同步读取的方式去对电表进行pq读取 - 按照Entry+Date方式进行并进行数据项对比\n         ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False",
+    "statusTrace" : "self = <test_meter_profile.Test_Meter_Profile object at 0x000002A30D3F93C8>, caseData = <function caseData.<locals>.loadData at 0x000002A30BEEE620>\nrequestMessage = 'http://54.179.93.135:32724/api/v1/Request/RequestMessage'\ndevice = {'communication_type': 'GPRS', 'connect_type': 'Short', 'device_number': 2241031003, 'device_type': 'Meter', ...}\npq = {'entries': 1440, 'entries_inuse_register_id': 'Average Voltages and Currents Profile-7. entries_in_use', 'entries_register_id': 'Average Voltages and Currents Profile-8. profile_entries', 'len': 16, ...}\n\n    @smokeTest\n    def test_get_pq_date(self, caseData, requestMessage, device, pq):\n        \"\"\"\n        使用同步读取的方式去对电表进行pq读取 - 按照Entry+Date方式进行并进行数据项对比\n         \"\"\"\n    \n        print(\"Step 1 : 获取当前电表第一条pq数据\")\n        data = caseData('testData/MeterFrozenData/meter_profile_data.json')\n        requestData = data['meter_pq_data']['request']\n        requestData['payload'][0]['deviceNo'] = device['device_number']\n        transactionId = str(device['device_number']) + '_' + time.strftime('%y%m%d%H%M%S', time.localtime())\n        requestData['payload'][0]['transactionId'] = transactionId\n        requestData['payload'][0]['data'][0]['registerId'] = pq['register_id']\n        response, elapsed = HESRequest().post(url=requestMessage, params=requestData)\n        print('Response --- ', response)\n        if response.get('reply')['replyCode'] != 200:\n>           assert False\nE           assert False\n\ntestCase\\HESIntegration\\Profile_Data_Check\\test_meter_profile.py:95: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "4670cb9ea3203404",
+      "name" : "stdout",
+      "source" : "4670cb9ea3203404.txt",
+      "type" : "text/plain",
+      "size" : 1547
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "requestMessage::0",
+    "time" : {
+      "start" : 1665897181776,
+      "stop" : 1665897181777,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "slow_down_tests::0",
+    "time" : {
+      "start" : 1665897165694,
+      "stop" : 1665897166701,
+      "duration" : 1007
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "smokeTest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.HESIntegration.Profile_Data_Check"
+  }, {
+    "name" : "suite",
+    "value" : "test_meter_profile"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Meter_Profile"
+  }, {
+    "name" : "host",
+    "value" : "NeonPC"
+  }, {
+    "name" : "thread",
+    "value" : "23776-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.HESIntegration.Profile_Data_Check.test_meter_profile"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Total Defects",
+      "matchedStatuses" : [ "failed" ],
+      "flaky" : false
+    } ],
+    "tags" : [ "smokeTest" ]
+  },
+  "source" : "fb2bb66f5a973168.json",
+  "parameterValues" : [ ]
+}
